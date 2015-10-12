@@ -1,0 +1,14 @@
+default: &default
+  adapter: postgresql
+
+development:
+  <<: *default
+  database: highway_dev
+
+test:
+  <<: *default
+  database: highway_test
+
+production:
+  <<: *default
+  database: highway
